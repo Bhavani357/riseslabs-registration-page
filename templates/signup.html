@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/static/signup.css">
+    
+  </head>
+  <body class="body">
+  
+      <div class="card-container">
+          <div class="heading-container">
+            <h1 class="heading"> Sign Up </h1>
+          </div>
+          
+          <form action="signup" method="post">
+              <div>
+                <input class="input" type="text" placeholder="first Name" name="firstname" id="firstname" required/>
+                <input class="input" type = "text" placeholder="last Name" name="lastname" id="lastname" required/>
+              </div>
+              <input class="input input-width" type="email" placeholder="Email id" name="email" id="email" required/> <br/>
+              <input class="input input-width" type="password" placeholder="password" name="password" id="password" required/><br/>
+              <input class="input input-width" type="password" placeholder="confirm password" name="confpassword" id="confpassword" required/><br/>
+              <input type="checkbox" class="checkbox"/> <label class="label"> I agree with <span style="color: #9E0513;">privacy</span> and <span style="color: #9E0513;">policy</span> </br>
+              <input type="submit" value="Sign Up" class="input-width input submit"/>
+              <div>{{msg}}</div>
+
+              <h3 class="para">Already have an account? <span style="color: #9E0513;">Sign In</span>
+          </form>
+      </div>
+    
+  </body>
+</html>
