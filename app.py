@@ -3,7 +3,7 @@ import mysql.connector
 
 app = Flask(__name__)
 
-mydb = mysql.connector.connect(host='localhost',user='root',password='Ydurga232bhavani@',database='riseslabs') 
+mydb = mysql.connector.connect(host='localhost',user='root',password='',database='riseslabs') 
 mycursor = mydb.cursor() 
 
 @app.route('/')
